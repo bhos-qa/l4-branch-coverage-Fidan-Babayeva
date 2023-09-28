@@ -85,4 +85,10 @@ public class Main {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
 
+    // Vulnerable method that does not properly escape user input
+    public String welcomeUser(String username) {
+        String greeting = "Welcome, " + username + "!";
+        return "<div>" + greeting + "</div>";
+    }
+
 }
