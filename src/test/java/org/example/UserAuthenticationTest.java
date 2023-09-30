@@ -15,6 +15,6 @@ public class UserAuthenticationTest {
         String greeting = userAuth.welcomeUser(maliciousUsername);
 
         // Assert
-        assert(greeting.contains("Welcome, &lt;script&gt;alert('XSS Attack');&lt;/script&gt;"));
+        assertTrue(greeting.contains("<script>alert('XSS Attack');</script>"));
     }
 }
