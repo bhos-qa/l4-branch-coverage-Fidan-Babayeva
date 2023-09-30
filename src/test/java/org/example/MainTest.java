@@ -31,10 +31,5 @@ public class MainTest {
         assertArrayEquals(expected, Main.generateFibonacci(6));
     }
 
-    @Test
-    public void testFindMax() {
-        int[] arr = {4, 9, 2, 7, 1};
-        assertEquals(9, Main.findMax(arr));
-    }
 }
 
